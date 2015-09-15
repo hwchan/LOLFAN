@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+	<link rel="icon" href="../../images/icon.jpg">
+
+    <title>Ezreal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="ezreal.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Ezreal</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Ezreal - the Prodigal Explorer
+				</h2>
+				<h4>
+				"Time for a true display of skill!"
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/icon.png" alt="Potrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					7
+					</span>
+					<span id="defence">
+					2
+					</span>
+					<span id="ability">
+					6
+					</span>
+					<span id="difficulty">
+					7
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Ezreal's lore
+				</h3>
+				<p>
+				The intrepid young adventurer Ezreal has explored some of the most remote and abandoned locations on Runeterra. During an expedition to the buried ruins of ancient Shurima, he recovered an amulet of incredible mystical power. Likely constructed to be worn by one of the Ascended, the enormous talisman nonetheless fit snugly upon his arm, amplifying his raw sorcerous skill to such an extent that he's gained the reputation of a hero, much to his embarrassment.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Ezreal's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: Rising Spell Force</h4>
+				<p>
+				Hitting a target with any of Ezreal's abilities increases his own attack speed by 10%. 
+				</p>
+				<p>
+				This effect lasts for 6 seconds and stacks up to 5 times.
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Mysic Shot</h4>
+				<p>
+				Ezreal fires a bolt of energy in a line that will deal physical damage and apply on-hit effects to the first enemy it hits. 
+				</p>
+				<p>
+				If it strikes an enemy unit, all of Ezreal's cooldowns will be reduced by 1 second.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE: 35 / 55 / 75 / 95 / 115 <ad>(+ 110% AD)</ad> <ap>(+ 40% AP)</ap>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Essence Flux</h4>
+				<p>
+				Ezreal fires a wave of energy in a line. Any enemy champions it passes through are dealt magic damage, while any allied champions it travels through have their attack speed increased for 5 seconds.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: 70 / 115 / 160 / 205 / 250 <ap>(+ 80% AP)</ap>
+				</p>
+				<p>
+				ATTACK SPEED: 20 / 25 / 30 / 35 / 40%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Arcane Shift</h4>
+				<p>
+				Ezreal instantly teleports to a nearby target location and fires a homing bolt at the nearest enemy unit within 750 range, dealing magic damage to it.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: 75 / 125 / 175 / 225 / 275 <ap>(+ 75% AP)</ap>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Trueshot Barrage</h4>
+				<p>
+				After gathering energy for 1 second, Ezreal fires a powerful, broad energy missile that travels in a line across the whole map dealing magic damage to each enemy unit it passes through. 
+				</p>
+				<p>
+				It will deal 10% less damage for each subsequent target hit, down to a minimum of 30% damage dealt.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: 350 / 500 / 650 <ad>(+ 100% Bonus AD)</ad> <ap>(+ 90% AP)</ap>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

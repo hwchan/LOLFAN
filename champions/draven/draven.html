@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+	<link rel="icon" href="../../images/icon.jpg">
+
+    <title>Draven</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="draven.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Draven</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Draven - the Glorious Executioner
+				</h2>
+				<h4>
+				"Welcome to the League of Draven."
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/icon.png" alt="Potrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					9
+					</span>
+					<span id="defence">
+					3
+					</span>
+					<span id="ability">
+					1
+					</span>
+					<span id="difficulty">
+					8
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Draven's lore
+				</h3>
+				<p>
+				Unlike his brother Darius, victory in battle was never enough for Draven. He craved recognition, acclaim, and glory. He first sought greatness in the Noxian military, but his flair for the dramatic went severely underappreciated. Thirsting for a method to share "Draven" with the world, he turned his attention to the prison system. There he carved out the celebrity he desired by turning the tedious affair of executions into a premiere spectacle.
+				</p>
+				<p>
+				At Draven's first execution, he shocked onlookers when he ordered the doomed prisoner to run for dear life. Just before the man managed to flee from sight, Draven brought him down with a flawless throw of his axe. Soon, all Draven's executions became a gauntlet through which Noxian prisoners raced for a final chance at life. He used this trial as his own personal stage, and turned executions into a leading form of entertainment. He rallied onlookers into a frenzy, while desperate prisoners scrambled to evade him. They never succeeded. Rejecting the solemn, black uniforms of Noxian executioners, Draven donned bright outfits and developed flashy signature moves to distinguish himself. Crowds flocked to see Draven in action, and tales of his performances spread quickly. As his popularity grew, so did his already-inflated ego. He belonged at the center of the entire world.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Draven's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: League of Draven</h4>
+				<p>
+				When Draven catches a Spinning Axe, kills a minion or monster or destroys a tower, he gains one stack of Adoration. When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains 50 + (2 × per stack consumed) gold. Draven loses half of his Adoration stacks upon death.
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Spinning Axe</h4>
+				<p>
+				Draven starts spinning his axe, making his next attack within 5.8 seconds deal bonus physical damage equal to a percentage of his total attack damage.
+				</p>
+				<p>
+				This axe will ricochet off the target high up into the air, landing 2 seconds later at a location determined by Draven's current movement direction and speed. If Draven catches it, Spinning Axe will be applied to his next attack and he gains a stack of Adoration.
+				</p>
+				<p>
+				Draven can hold up to two Spinning Axes spinning at once.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				BONUS PHYSICAL DAMAGE: <ad>45 / 55 / 65 / 75 / 85% AD</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Blood Rush</h4>
+				<p>
+				Draven gains increased movement speed for 1.5 seconds and increased attack speed for 3 seconds. The movement speed bonus decreases rapidly over its duration. Catching a Spinning Axe will refresh Blood Rush's cooldown.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MOVEMENT SPEED: 40 / 45 / 50 / 55 / 60%
+				</p>
+				<p>
+				ATTACK SPEED: 20 / 25 / 30 / 35 / 40%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Stand Aside</h4>
+				<p>
+				Draven throws his axes in a line. Enemies hit take physical damage, are knocked aside, and are slowed for 2 seconds afterwards.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE: 70 / 105 / 140 / 175 / 210 <ad>(+ 50% bonus AD)</ad>
+				</p>
+				<p>
+				SLOW: 20 / 25 / 30 / 35 / 40%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Whirling Death</h4>
+				<p>
+				Draven hurls two massive axes in a given direction, dealing physical damage to every enemy struck.
+				</p>
+				<p>
+				Upon reaching the edge of the map, striking an enemy champion or upon the reactivation of Whirling Death, the axes will slowly come to a stop before changing direction and returning to Draven, dealing the same damage to every enemy struck on the way back.
+				</p>
+				<p>
+				Whirling Death deals 8% less damage for each unit hit, down to a minimum of 40%. The damage reduction resets when the axes reverse direction.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE (ONE HIT): 175 / 275 / 375 <ad>(+ 110% bonus AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

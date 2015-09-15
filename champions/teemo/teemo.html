@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+    <link rel="icon" href="images/icon.png">
+
+    <title>Teemo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="teemo.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Teemo</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Teemo - the Swift Scout
+				</h2>
+				<h4>
+				"Captain Teemo on duty."
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/Icon.png" alt="Potrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					5
+					</span>
+					<span id="defence">
+					3
+					</span>
+					<span id="ability">
+					7
+					</span>
+					<span id="difficulty">
+					6
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Teemo's lore
+				</h3>
+				<p>
+				Teemo is a legend among his yordle brothers and sisters in Bandle City. As far as yordles are concerned, there is something just slightly off about him. While Teemo enjoys the companionship of other yordles, he also insists on frequent solo missions in the ongoing defense of Bandle City. Despite his genuinely warm personality, something switches off inside Teemo's mind during combat so that the lives he must end while on patrol do not burden him. Even as a young recruit, the drill instructors and other trainees found it a little disconcerting that, while Teemo was normally charming and kind, he turned deadly serious and highly efficient the minute combat exercises began. Teemo's superiors quickly steered him toward the Scouts of the Mothership, which is one of Bandle City's most distinguished Special Forces unit alongside the Megling Commandos.
+				</p>
+				<p>
+				While most yordles do not handle solo scouting missions with a great deal of finesse, Teemo is remarkably efficient at them. His record of success in defending Bandle City from infiltrators easily makes him one of the most dangerous yordles alive, though you'd never know it by having a cup of honey mead with him at his favorite inn. Bandle City chose Teemo as their first champion for the League, and he has taken to it like a duck to water. His signature weapon - a blowgun - uses a rare ajunta poison he personally gathers from the jungles of Kumungu. To help cope with his lengthy periods of isolation, Teemo recently struck up a friendship with Tristana, a fellow League champion and fellow member of Bandle City's Special Forces. This connection is healthy for both yordles, though now Valoran's voracious media outlets circulate rumors that the friendship is turning into a romantic relationship. Regardless, Teemo is a crowd favorite in the League of Legends, and a pint-sized foe that many have come to fear.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Teemo's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: Camouflage</h4>
+				<p>
+				If Teemo stands still and takes no action for 2 seconds, he becomes stealthed. Taking any action or being moved will break his camouflage, giving Teemo the Element of Surprise, 40% bonus attack speed for 3 seconds.
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Blinding Dart</h4>
+				<p>
+				Teemo shoots a dart at an enemy, dealing magic damage and blinding them for a few seconds.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: 80 / 125 / 170 / 215 / 260 <ap>(+ 80% AP)</ap>
+				</p>
+				<p>
+				BLIND DURATION: 1.5 / 1.75 / 2 / 2.25 / 2.5
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Move Quick</h4>
+				<p>
+				Teemo gains increased movement speed. Damage from champions and structures will disable this bonus for 5 seconds.
+				</p>
+				<p>
+				For 3 seconds, Teemo doubles his passive movement speed bonus. While active, Move Quick's bonus cannot be disabled via champion or structure damage.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PASSIVE MOVEMENT SPEED: 10 / 14 / 18 / 22 / 26%
+				</p>
+				<p>
+				ACTIVE MOVEMENT SPEED: 20 / 28 / 36 / 44 / 52%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Toxic Shot</h4>
+				<p>
+				Teemo's auto-attacks deal bonus magic damage and poison his target, causing them to take additional magic damage over 4 seconds. Subsequent attacks only refresh the duration.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE PER SECOND: 6 / 12 / 18 / 24 / 30 <ap>(+ 10% AP)</ap>
+				</p>
+				<p>
+				MAGIC DAMAGE ON-HIT: 10 / 20 / 30 / 40 / 50 <ap>(+ 30% AP)</ap>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Noxious Trap</h4>
+				<p>
+				Teemo generates a new trap periodically, and can only store up to 3 traps at once.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE PER SECOND: 50 / 81.25 / 112.5 <ap>(+ 12.5% AP)</ap> 
+				</p>
+				<p>
+				SLOW: 30 / 40 / 50%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

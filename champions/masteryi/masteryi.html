@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+	<link rel="icon" href="../../images/icon.jpg">
+
+    <title>Mater Yi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="masteryi.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Mater Yi</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Mater Yi - the Wuju Bladesman
+				</h2>
+				<h4>
+				"My blade is yours."
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/Icon.png" alt="Potrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					10
+					</span>
+					<span id="defence">
+					4
+					</span>
+					<span id="ability">
+					2
+					</span>
+					<span id="difficulty">
+					4
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Mater Yi's lore
+				</h3>
+				<p>
+				Through the ancient martial art of Wuju, Master Yi tempered his body and sharpened his mind until thought and action became one. Though he chooses to enter into violence as a last resort, the grace and speed with which he wields his blade ensures resolution is always swift. As the last living practitioner of Wuju, Master Yi has devoted his life to finding able pupils to carry on the legacy of his lost people.
+				</p>
+				<p>
+				Even before Yi mastered Wuju, he was considered one of the most skilled practitioners of the mystical martial art. He would soon prove his mastery when word of a massive Noxian invasion reached his remote village. Yi swept across the battlefields of Ionia, turning back the tide of Noxus's vast infantry with swift and deadly strikes, much to the embarrassment of the Noxian High Command. Recognizing the threat the Wuju disciples posed to their invasion, the Noxians chose to unleash a nightmarish chemical attack on the home of the deadly art. Those who somehow survived the poisonous concoction had their minds twisted beyond repair. Yi's home was left in ruin.
+				</p>
+				<p>
+				At the war's conclusion, Yi returned to the grotesque remains of his village. There he became the attack's final casualty. Slain in spirit, if not in body, Yi clung to the only feeling left within his heart: vengeance. Driven only by his desire to punish those who'd destroyed his home, Yi spent years training in seclusion. He became a deadlier swordsman than he had ever been, but true mastery of Wuju still eluded him.
+				</p>
+				<p>
+				At the height of Yi's frustration, a monkey of unusually noble bearing interrupted his training. Standing as straight and tall as a man, the monkey watched and mimicked Yi's movements. Yi shooed the monkey away, but the agile creature took great amusement in turning Yi's own techniques against him. Gradually, Yi felt his anger subside as he sparred with the playful animal, and when the burden of his hatred had fully lifted, he found he had caught the monkey by his tail. Yi then understood that he would never master Wuju so long as he pursued it for vengeance, and as he let go of the monkey, he also released his desire to shed his enemy's blood.
+				</p>
+				<p>
+				Yi thanked the monkey for showing him what he'd been blind to, and was surprised when the creature actually replied. He wished to learn Yi's art of fighting. It was an odd request, but through it Yi saw his new path: the way to honor the memory of his lost people was to pass their teachings on to a new generation.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Mater Yi's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: Double Strike</h4>
+				<p>
+				Every 4th consecutive autoattack, Master Yi strikes twice. The second strike deals <ad>50% of Master Yi's AD</ad>, but fully applies on-hit effects and can critically strike.			
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Alpha Strike</h4>
+				<p>
+				Master Yi becomes untargetable and leaps to strike up to 4 enemies, dealing physical damage to each and dealing additional damage to minions and monsters. 
+				</p>
+				<p>
+				Each bounce will target the nearest enemy that has not yet been damaged. Master Yi re-appears at the initial target's location after the effect ends.
+				</p>
+				<p>
+				Alpha Strike can critically strike, dealing additional physical damage equal to <ad>60% AD</ad>. Basic attacks reduce the cooldown of Alpha Strike by 1 second.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE: 25 / 60 / 95 / 130 / 165 <ad>(+ 100% AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Meditate</h4>
+				<p>
+				Master Yi channels for up to 4 seconds, restoring health each second. This healing is increased by 1% for every 1% of his missing health. Meditate also resets the autoattack timer.
+				</p>
+				<p>
+				While channeling, Master Yi reduces incoming damage (halved against turrets).
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				BASE HEALING PER SECOND: 30 / 50 / 70 / 90 / 110 (+ 30% AP)
+				</p>
+				<p>
+				DAMAGE REDUCTION: 50 / 55 / 60 / 65 / 70%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Wuju Style</h4>
+				<p>
+				Master Yi gains <ad>10% of his total AD</ad> as bonus attack damage.
+				</p>
+				<p>
+				Autoattacks deal bonus true damage for 5 seconds. Afterwards, the passive bonus is lost until Wuju Style is off cooldown.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				BONUS TRUE DAMAGE: 10 / 15 / 20 / 25 / 30 <ad>(+10 / 12.5 / 15 / 17.5 / 20% AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Highlander</h4>
+				<p>
+				Champion kills and assists reduce the current cooldown of Master Yi's basic abilities by 70%.
+				</p>
+				<p>
+				For 10 seconds, Master Yi gains increased movement speed and attack speed, and becomes immune to all slowing effects. While active, champion kills and assists extend the duration of Highlander by 4 seconds.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MOVEMENT SPEED: 25 / 35 / 45%
+				</p>
+				<p>
+				ATTACK SPEED: 30 / 55 / 80%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

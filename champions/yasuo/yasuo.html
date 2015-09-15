@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+	<link rel="icon" href="../../images/icon.jpg">
+
+    <title>Yasuo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="yasuo.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Yasuo</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Yasuo - the Unforgiven
+				</h2>
+				<h4>
+				"Death is like the wind; always by my side."
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/Icon.png" alt="Potrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					8
+					</span>
+					<span id="defence">
+					4
+					</span>
+					<span id="ability">
+					4
+					</span>
+					<span id="difficulty">
+					10
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Yasuo's lore
+				</h3>
+				<p>
+				Yasuo is a man of resolve, an agile swordsman who wields the wind itself to cut down his foes. But this once proud warrior has been disgraced by a false accusation and forced into a desperate fight for survival. With the world turned against him, he will do everything in his power to bring the guilty to justice and restore his honor.
+				</p>
+				<p>
+				Once a brilliant pupil at a renowned Ionian sword school, Yasuo was the only student in a generation to master the legendary wind technique. Many believed he was destined to become a great hero. However, his fate was changed forever when Noxus invaded. Yasuo was charged with guarding an Ionian Elder, but, foolishly believing his blade alone could make the difference, left his post to join the fray. By the time he returned, the Elder had been slain.
+				</p>
+				<p>
+				Disgraced, Yasuo willingly turned himself in, prepared to pay for his failure with his life. He was shocked, however, to find himself accused not just of dereliction, but of the murder itself. Though confused and racked with guilt, he knew the assassin would go unpunished if he did not act. Yasuo raised his sword against the school and fought his way free, knowing his treason would turn all of Ionia against him. Now truly alone for the first time in his life, he set out to find the Elder's real killer.
+				</p>
+				<p>
+				Yasuo spent the next several years wandering the land, seeking any clue that might lead him to the murderer. All the while, he was relentlessly hunted by his former allies, continually forced to fight or die. His mission drove him ever forward, until he was tracked down by the one foe he dreaded most – his own brother, Yone.
+				</p>
+				<p>
+				Bound by a common code of honor, the two warriors bowed and drew their swords. Silently they circled one another under the moonlight. When they finally charged forward, Yone was no match for Yasuo; with a single flash of steel he cut his brother down. Yasuo dropped his weapon and rushed to Yone's side.
+				</p>
+				<p>
+				Overcome with emotion, he demanded to know how his own kin could think him guilty. Yone spoke: “The Elder was killed by a wind technique. Who else could it be?” Understanding swept over Yasuo as he suddenly realized why he had been accused. He professed his innocence once more and begged his brother's forgiveness. Tears streamed down Yasuo's face as his brother passed in his arms.
+				</p>
+				<p>
+				Yasuo buried Yone under the rising sun, but could take no time to mourn. Others would be after him before long. His brother's revelation had given Yasuo newfound purpose; he now had the clue that would lead to the true killer. Swearing an oath, he gathered his belongings and, with one last look at Yone's grave, set out with the wind at his back.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Yasuo's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: Way of the Wanderer</h4>
+				<p>
+				Yasuo's critical strike chance is doubled, but the damage dealt by his critical strikes is reduced by 10% (25% on 		
+				</p>
+				<p>
+				At maximum Flow, the next instance of damage coming from a champion or monster against Yasuo will first convert his Flow into an absorption shield. After 1 second, if not already depleted, the shield dissipates and Yasuo loses all his Flow.
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Steel Tempest</h4>
+				<p>
+				Hitting an enemy with Steel Tempest grants Gathering Storm for 10 seconds that modifies Yasuo's next Steel Tempest, forming a chain of three actives.
+				</p>
+				<p>
+				Yasuo thrusts his sword forward, dealing physical damage to all enemies in a 475-unit line.
+				</p>
+				<p>
+				 Same as the first active.
+				</p>
+				<p>
+				Yasuo brandishes his sword, dealing physical damage and knocking up all enemies in a 475-unit line and unleashing a whirlwind that tears forward an additional 425-units (total 900 range), dealing the same physical damage and knocking up all enemies hit. This active resets the chain.
+				</p>
+				<p>
+				Each cast can critically strike and on-hit effects will apply to the first enemy hit (excluding the third cast's whirlwind). Additionally, each cast can be used during Sweeping Blade to change the area of effect to a 375-radius circle around Yasuo.
+				</p>
+				<p>
+				The cooldown and cast time of Steel Tempest is reduced by 1% for every 1.72% of Yasuo's bonus attack speed.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE: 20 / 40 / 60 / 80 / 100 <ad>(+ 100% AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Wind Wall</h4>
+				<p>
+				Yasuo creates a gust of wind that travels forward to form a wall 400 units away from himself. The wall slowly drifts forward over 3.75 seconds, blocking all enemy projectiles with the exception of tower hits.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				WALL WIDTH: 300 / 350 / 400 / 450 / 500
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Sweeping Blade</h4>
+				<p>
+				Yasuo dashes 475-units in the direction of the target enemy, dealing magic damage and marking them briefly. The speed of the dash scales with Yasuo's bonus movement speed.
+				</p>
+				<p>
+				Each cast increases the next dash's base damage by 25% for 5 seconds, up to 50% bonus damage.
+				</p>
+				<p>
+				Yasuo cannot use Sweeping Blade on an enemy that's already been marked.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: 70 / 90 / 110 / 130 / 150 <ap>(+ 60% AP)</ap>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Last Breath</h4>
+				<p>
+				 Yasuo blinks to the nearest visible Airborne enemy champion to the cursor, instantly generating maximum Flow. Upon arriving, he suspends all airborne units within a 400-radius of his target in the air for 1 second.
+				</p>
+				<p>
+				Once he lands, Yasuo deals physical damage to all nearby units and gains 50% penetration to bonus armor for 15 seconds (this affects armor from items, buffs, runes and masteries). Casting Last Breath will reset the chain/Gathering Storm procs on Steel Tempest.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE: 200 / 300 / 400 <ad>(+ 150% bonus AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

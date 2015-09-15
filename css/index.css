@@ -1,0 +1,43 @@
+/* News header color, padding, and block color */
+h2 {
+	background: rgba(0,0,0,.8);
+	color: white;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Image next to news paragraph */
+img.col-md-6{
+width: 50%;
+padding: 0px 5px 5px 0px;
+}
+
+/* Background on which the news articles lie */
+.middle-content{
+	background: rgba(255,255,255,.25);
+	color: black;
+	margin-top: 15px;
+	box-shadow: 0px 0px 30px 1px #000000;
+	padding-bottom: 0;
+}
+
+/* News article paragraphs */
+div.col-md-6{
+	background: rgba(191,191,191, 0.75);
+	padding: 1%;
+}
+
+/* Overwrite pagination styling */
+.pagination>li>a{
+	background-color: #222;
+	border-color: #1B1B1B;
+	color: #9d9d9d;
+}
+
+.pagination>li>a:hover{
+	color: white;
+	background-color: #222;
+	border-color: #1B1B1B;
+}
+

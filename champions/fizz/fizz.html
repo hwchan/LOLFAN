@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+	<link rel="icon" href="../../images/icon.jpg">
+
+    <title>Fizz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="fizz.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Fizz</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Fizz - the Tidal Trickster
+				</h2>
+				<h4>
+				"Let me at 'em!"
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/icon.png" alt="Potrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					6
+					</span>
+					<span id="defence">
+					4
+					</span>
+					<span id="ability">
+					7
+					</span>
+					<span id="difficulty">
+					6
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Fizz's lore
+				</h3>
+				<p>
+				Centuries ago, an ancient water-dwelling race built a hidden city beneath a mountain in the sea. Though these creatures had their enemies, the city was an impenetrable fortress, and, in the safety it provided, they grew complacent. Fizz, however, harbored a curious spirit that could not be satisfied living so cushioned a life. Unable to resist the allure of danger, Fizz had a habit of sneaking out of the city to look for trouble. In his many adventures he grew to be a powerful fighter with a sharp cleverness that let him skirt danger with ease. One day Fizz returned to find the city abandoned: his people had vanished, leaving Fizz without a clue to explain their disappearance. With nothing left in the city to keep him, Fizz salvaged an enchanted seastone trident from the ruins and set out alone.
+				</p>
+				<p>
+				Fizz wandered the ocean in search of his people for years, using the skills he'd learned during his adventures as a young boy to survive. Finally, Fizz discovered the port of Bilgewater. He was fascinated with the existence of life above the water and could not resist exploring the island. In his endless curiosity, Fizz inadvertently meddled in the affairs of the humans who lived there, and his presence did not go unnoticed. His mischief angered many residents who eventually sought to capture or kill him. Fizz found himself cornered, and he prepared to return to the sea despite the fondness he'd come to hold for Bilgewater. As he stood at the docks, a massive dragon-shark attacked the port. Fizz defeated the beast, using his resourcefulness and knowledge of the creature's weaknesses to his advantage. Having earned the gratitude and respect of the humans, Fizz decided to stay in Bilgewater. To further serve his new home, he joined the League of Legends.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Fizz's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: Nimble Fighter</h4>
+				<p>
+				Fizz's dexterity allows him to ignore unit collision and take 4 / 6 / 8 / 10 / 12 / 14 reduced physical damage from autoattacks.		
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Urchin Strike</h4>
+				<p>
+				ACTIVE: Fizz dashes a fixed distance in the direction of the target enemy unit, dealing <ad>100% AD</ad> physical damage plus bonus magic damage. The physical damage applies on-hit effects and the magic damage applies spell effects.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				TOTAL DAMAGE: 10 / 25 / 40 / 55 / 70 <ap>(+ 30% AP)</ap> <ad>(+ 100% AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Seastone Trident</h4>
+				<p>
+				Fizz's autoattacks rend his target, dealing magic damage over 3 seconds.
+				</p>
+				<p>
+				For the next 5 seconds, Fizz's autoattacks deal bonus magic damage.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				TOTAL MAGIC DAMAGE: 20 / 30 / 40 / 50 / 60 <ap>(+ 45% AP)</ap>
+				</p>
+				<p>
+				BONUS MAGIC DAMAGE: <hp>10 / 20 / 30 / 40 / 50 (+ 4 / 5 / 6 / 7 / 8% of target's missing health)</hp>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Playfull/Trickster</h4>
+				<p>
+				Fizz hops onto his trident in a nearby location, becoming untargetable for 0.75 seconds and gaining the ability to use Trickster for no additional cost before the effect ends.
+				</p>
+				<p>
+				If Fizz does not use Trickster, he will slam the ground below him, dealing magic damage and slowing nearby enemies within 330 units for 2 seconds.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: 70 / 120 / 170 / 220 / 270 <ap>(+ 75% AP)</ap>
+				</p>
+				<p>
+				SLOW: 40 / 45 / 50 / 55 / 60%
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Chum the Waters</h4>
+				<p>
+				Fizz throws a fish in a line that will bind itself onto the first enemy champion it hits, slowing them for 1.5 seconds and increasing Fizz's damage against them by 20% for 6 seconds, excluding Chum the Waters's damage. A shark will come out from the earth to eat the fish after 1.5 seconds, regardless of position.
+				</p>
+				<p>
+				If a champion has the fish attached to them, the shark will knock them up for 1 second. All other enemies within 250-range are knocked away from the shark. All enemies hit are dealt magic damage and are slowed for 1.5 seconds afterwards.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				SLOW: 50 / 60 / 70%
+				</p>
+				<p>
+				MAGIC DAMAGE: 200 / 325 / 450 <ap>(+ 100% AP)</ap>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

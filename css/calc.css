@@ -1,0 +1,113 @@
+/*This creates the top row of flexbox
+,with champion and item selection*/
+
+select{
+    color: black;
+}
+option{
+    color: black;
+}
+#SelfQ {
+    background-image: url(../images/q.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-left: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+}
+#SelfW {
+    background-image: url(../images/w.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-left: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+}
+#SelfE {
+    background-image: url(../images/e.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-left: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+}
+#SelfR {
+    background-image: url(../images/r.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-left: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+}
+#auto-attk {
+    background-image: url(../images/damage.png);
+    background-color: rgba(28,28,28,.7);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-left: 1px solid #1c1c1c;
+    border-right: 1px solid #1c1c1c;
+}
+/*This one gives the damage for each
+individual ability*/
+.outcomebox{
+    width: auto;
+    height: 200px;
+    border: none;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+.outcomebox div{
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
+#calculatestats {
+    background-color: rgba(255,255,255,1);
+    font-weight: bold;
+    margin-top: 25px;
+}
+#calculatestats:hover {
+    background-color: rgba(28,28,28,.7);
+    color: #ffd251;
+    font-weight: bold;
+}
+
+#items1, #items2, #items3,#items4,#items5,#items6,#btn-champ {
+    color: black;
+    background-color: navajowhite;
+    margin-bottom: 15px;
+    padding: 3px 10px;
+    border: 2px solid #1C1C1C;
+    border-radius: 5px;
+    cursor:pointer;
+}
+h5 {
+    color: #FE5E32;
+}
+h4 {
+    color:#0679bf;
+    padding-bottom: 5px;
+    margin-top: -5px;
+}
+#btn-champ {
+    padding: 5px 20px;
+}
+.align {
+    text-align: center;
+}
+.border-right {
+    border-right: 2px solid #1C1C1C;
+    height: 100px;
+}
+#SelfQ,#SelfE,#SelfR,#SelfW,#auto-attk {
+    padding-bottom: 3px;
+    color: orange;
+}
+#ro.row {
+    background-color: rgba(28,28,28,.7);
+    margin-left: -30px;
+    margin-right: -30px;
+    border: 1px solid #1c1c1c;
+}

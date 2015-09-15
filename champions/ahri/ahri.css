@@ -1,0 +1,29 @@
+html {
+	background: url("images/splash.jpg") no-repeat top;
+	background-size: 1920px, 1080px;
+	background-color: black;
+}
+#attack {
+	/* width 3 * 40px + 32px*/
+	min-width: 64px;
+	width: 30%;
+	max-width: 152px;
+}
+#defence {
+	/* width 4 * 40px + 32px*/
+	min-width: 64px;
+	width: 40%;
+	max-width: 192px;
+}
+#ability {
+	/* width 8 * 40px + 32px*/
+	min-width: 64px;
+	width: 80%;
+	max-width: 532px;
+}
+#difficulty {
+	/* width 5 * 40px + 32px*/
+	min-width: 64px;
+	width: 50%;
+	max-width: 232px;
+}

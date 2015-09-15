@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- Adapted from http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A League of Legends fanpage complete with news, information, and damage calculator">
+    <meta name="author" content="hwc, mk, mdl, plm, bw">
+	<link rel="icon" href="../../images/icon.jpg">
+
+    <title>Garen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Site wide CSS -->
+    <link href="../../css/base.css" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link href="../champion.css" rel="stylesheet">
+    <!-- Champion specific background -->
+    <link href="garen.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<!-- Display a warning for disabled Javascript -->
+	<noscript>
+		<div class="alert alert-warning" role="alert"><strong>JavaScript is disabled!</strong> The items page, calculator, and sign in function requires JavaScript. Please reenable JavaScript to access these functions.</div>
+	</noscript>
+	<div class="container">
+	<a href="../../index.html"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<!-- Collapsed navbar hamburger -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../../index.html">News</a></li>
+					<li><a href="../../intro.html">Intro</a></li>
+					<li>
+						<!-- Show the dropdown for Media if Javascript is enabled -->
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"\" data-toggle=\"dropdown\">Media<span class=\"caret\"></span></a> \
+							<ul class=\"dropdown-menu inverse-dropdown\"> \
+								<li><a href=\"../../videos.html\">Videos</a></li> \
+								<li><a href=\"../../lcs.html\">Pro teams</a></li> \
+							</ul> \
+							")
+						</script>
+						<!-- Else show plain links -->
+						
+						<noscript>
+							<div id="noscript-media">
+								<a href="../../videos.html">Videos</a><br>
+								<a href="../../lcs.html">Pro teams</a>
+							</div>
+						</noscript>
+						
+					</li>
+					<li class="active"><a href="../../champions.html">Champions</a></li>
+					<li><a href="../../items.html">Items</a></li>
+					<li><a href="../../calculator.html">Calculator</a></li>
+					<li>
+						<script type="text/javascript">
+							document.write(" \
+							<a href=\"#signin\" data-toggle=\"modal\" data-target=\"#signInModal\">Sign in</a> \
+							")
+						</script>
+						
+						<noscript>
+							<div id="noscript-signin">
+								<a href="../../signin.html">Sign in</a>
+							</div>
+						</noscript>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+
+		</nav>
+		
+		  <div class="middle-container">
+			<h1><span style="font-size:55px">C</span>HAMPION - Garen</h1>
+			<div class="middle-content">
+			<div class="background"><!--Delete if group is pissed -->
+				<h2> 
+				Garen - the Might of Demacia
+				</h2>
+				<h4>
+				"My heart and sword always for Demacia."
+				</h4>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+					<img src="images/icon.png" alt="Portrait"  id="championicon">
+					<div id="championstats">
+					<span id="attack">
+					7
+					</span>
+					<span id="defence">
+					7
+					</span>
+					<span id="ability">
+					1
+					</span>
+					<span id="difficulty">
+					5
+					</span>
+					</div>
+				</div>
+				<hr class="hrsmall hr-white">
+
+				<h3>
+				Garen's lore
+				</h3>
+				<p>
+				Throughout Valoran, the resolve of Demacia's military is alternately celebrated or despised, but always respected. Their "zero tolerance" moral code is strictly upheld by civilians and soldiers alike. In combat, this means Demacian troops may not make excuses, flee, or surrender by example. Garen, the valiant warrior who bears the title "the Might of Demacia", is the paradigm to which these leaders are compared. Thousands of great heroes have risen and fallen on the bloody battlefields between Demacia and its preeminent rival, Noxus. It was beneath their mighty banners of war that Garen first met steel with Katarina, the Sinister Blade. The infantrymen who beheld this event (and survived) commented that it seemed as though the two were locked in a mortal waltz set against a symphony of clashing blades.
+				</p>
+				<p>
+				Garen, the pride of the Demacian military and the leader of the Dauntless Vanguard, returned from this battle breathless for the first time in his career, though some speculate this was due to reasons other than exhaustion. The plausibility of these rumors was bolstered when, in every instance thereafter, Garen seized the opportunity to encounter the Sinister Blade again. A paragon of Demacian ethic, Garen never entertained such allegations, for he knew others couldn't understand. Even simply the pursuit of a worthy opponent on the battlefield is, to a true warrior, the reason to rise each morning. The promise of one, particularly one so beautifully and diametrically opposed, is the validation of his existence.
+				</p>
+				<hr class="hrsmall hr-white">
+
+
+				<h3>
+				Garen's abilities
+				</h3>
+				<div class="flexbox">
+				<img src="images/p.png" alt="p" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Passive: Perseverence</h4>
+				<p>
+				Garen will regenerate <hp>0.4 / 0.8 / 2.0% of his maximum health</hp> every second if he has not been hit with an enemy ability or taken damage from any source (excluding minions) in the last 9 / 6 / 4 seconds. 			
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/q.png" alt="q" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>Q: Decisive Strike</h4>
+				<p>
+				Garen breaks free from all slows affecting him and gains 35% movement speed for a few seconds. Additionally, his next basic attack within 4.5 seconds will deal additional physical damage and will silence his target.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				BONUS PHYSICAL DAMAGE: 30 / 55 / 80 / 105 / 130 <ad>(+ 40% AD)</ad>
+				</p>
+				<p>
+				MOVEMENT SPEED DURATION: 1.5 / 2.25 / 3 / 3.75 / 4.5
+				</p>
+				<p>
+				SILENCE DURATION: 1.5 / 1.75 / 2 / 2.25 / 2.5
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/w.png" alt="w" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>W: Courage</h4>
+				<p>
+				Garen's bonus armor and magic resistance are increased by 20%.
+				</p>
+				<p>
+				Garen gains a defensive shield for a few seconds, reducing incoming damage by 30% and granting 30% crowd control reduction for the duration.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				DURATION: 2 / 3 / 4 / 5 / 6
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/e.png" alt="e" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>E: Judgment</h4>
+				<p>
+				Garen rapidly spins his sword around his body for 3 seconds, dealing physical damage each second to enemies within range. Minions take 75% damage from Judgment. Garen ignores unit collision while spinning, but moves 20% slower when traveling through minions.
+				</p>
+				<p>
+				Judgment can critically strike, multiplying the total AD component by (Garen's critical strike damage modifier − 50%).
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				PHYSICAL DAMAGE PER SECOND: 20 / 45 / 70 / 95 / 120 <ad>(+ 70 / 80 / 90 / 100 / 110% AD)</ad>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+
+				<div class="flexbox">
+				<img src="images/r.png" alt="r" class="abilityleft">
+				<div class="abilitymiddle">
+				<h4>R: Demacian Justice</h4>
+				<p>
+				Garen calls upon the might of Demacia to attempt to execute an enemy champion, dealing magic damage plus additional damage based on his target's missing health.
+				</p>
+				</div>
+				<div class="abilityright">
+				<p>
+				MAGIC DAMAGE: <hp>175 / 350 / 525 (+ 28.57 / 33.33 / 40% of target's missing health)</hp>
+				</p>
+				</div>
+				</div>
+				<hr class="hr-white">
+				<hr class="hrsmall hr-white">
+
+
+			</div><!--Also delete this if group is pissed -->
+			</div>
+		</div>
+			
+			
+			<footer class="row">
+				<div class="col-md-4 footer-left">
+					About
+					<br>
+					<a href="#">Contact</a>
+				</div>
+				<div class="col-md-4 footer-center">
+					<a href="#"><img alt="News page" src="../../images/League_of_legends_logo_transparent.png" width="190" height="75"></a>
+				</div>
+				<div class="col-md-4 footer-right">
+					Disclaimer notice
+					<br>
+					&copy; 2015 Copyright notice&nbsp;			
+				</div>
+			</footer>
+		  </div>
+
+	<!-- Sign in modal -->
+	<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 id="signin-title">Sign in</h1>
+					</div>
+					<div class="modal-body">
+						<!-- Email -->
+						<span class="modal-title">Email: <span id="email-star">*</span></span><br>
+						<input type="text" placeholder="example@email.com" name="email" size="40">
+						<br>
+						<!-- Submit -->
+						<input id="submitButton" type="submit" class="btn btn-primary pull-right" value="Go!">
+						<br>
+						<!-- Password -->
+						<span class="modal-title">Password: <span id="password1-star">*</span></span><br>
+						<input type="password" name="password1" size="40">
+						<!-- Register -->
+						<a id="registerLink" href="#" onclick="registerToggle()" class="small pull-right">Register</a>
+						<br>
+						<!-- Forgot your password -->
+						<a href="#" class="small">Forgot your password?</a>
+						<!-- Hidden registration area -->
+						<div id="registerArea">
+							<hr class="hr-white">
+							<!-- Repeat password -->
+							<span class="modal-title">Repeat password: <span id="password2-star">*</span></span><br>
+							<input type="password" name="password2" size="40">
+							<br>
+							<!-- Terms -->
+							<input type="checkbox" name="termsConditions">
+							<span class="small">I accept the <a href="#" data-toggle="tooltip" data-placement="right" title="By accepting, you forfeit all your assets to us.">terms and conditions</a> <span id="terms-star">*</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End of modal -->
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/base.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+  </body>
+</html>

@@ -1,0 +1,250 @@
+/*****************
+	Background
+******************/
+html{
+	background-color: #000000;
+}
+body {
+	background: url("../images/Summoners_Rift.jpg") no-repeat top;
+}
+#email{
+	color: white;
+}
+
+
+
+/************* 
+	Navbar 
+**************/
+/* Overwrite style */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+	position: relative;
+	z-index: 1030;
+}
+.navbar{
+	min-height: 50px;
+	margin-bottom: 0px;
+	border: 0px;
+	box-shadow: 0px 0px 10px 1px #000000;
+}
+.navbar-fixed-top .navbar-collapse{
+	max-height: none;
+}
+/* Border for every li except the first */
+ul.nav.navbar-nav > li ~ li{
+	border-left: 1px solid #1B1B1B;
+}
+/* When the screen is > 768px */
+@media (min-width: 768px){
+	/* Space out each li to be centered */
+	ul.nav.navbar-nav li {
+		font-size: 14px;
+		width: 98px;
+	}
+	/* Center the nav ul*/
+	.nav{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		float: none;
+		width: 750px;
+	}
+}
+/* When the screen is > 992px, space out each li to be centered */
+@media (min-width: 992px){
+	ul.nav.navbar-nav li {
+		font-size: 16px;
+		width: 107px;
+	}
+}
+/* Handle noscript styles */
+#noscript-signin{
+	height: 50px;
+	padding-top: 15px;
+}
+#noscript-media{
+	height: 50px;
+	padding-top: 5px;
+}
+
+
+/**********************
+	Navbar dropdown 
+***********************/
+/* Adapted from https://github.com/twbs/bootstrap/issues/9588 */
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover{
+	background-color: #1C1C1C;
+}
+/* Overwrite style */
+.dropdown-menu{
+	min-width: 0;
+	border-radius: 0;
+}
+/* Dropdown box */
+.inverse-dropdown{
+  background-color: #1C1C1C;
+  border: 0;
+  border-top: 1px solid #222222;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* So it doesn't mess with the collapsed nav */
+@media (min-width: 768px){
+	.inverse-dropdown>li>a{
+		color: #fff;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+	}
+}
+/* Drowdown box link highlight */
+.inverse-dropdown>li>a:hover{
+	color: #fff;
+	background-color: #000;
+}
+
+
+
+/*********************************** 
+	Middle container and content
+************************************/
+/* First letter of h1 is larger */
+.h1-capital{
+	font-size: 55px;
+}
+.middle-container{
+	padding: 5px 10px;
+	background: rgba(0,0,0,.6);
+	color: white;
+	box-shadow: 0px 0px 10px 1px #000000;
+}
+.middle-content{
+	background: rgba(0,0,0,.7);
+	padding: 30px;
+	margin-top: 18px;
+	box-shadow: 0px 0px 30px 1px #000000;
+	min-height: 500px;
+}
+/* Overwrite style */
+.container{
+	padding: 0px;
+}
+/* When the screen is > 768px */
+@media (min-width: 768px){
+	/* Increase the padding for the transparent container*/
+	.middle-container{
+		padding: 5px 40px;
+	}
+	/* Cap the transparent container width to show background */
+	.container{
+		max-width: 900px;
+	}
+}
+/* When the screen is > 1367px */
+@media (min-width: 1367px){
+	/* Cap the transparent container width to show background */
+	.container{
+		max-width: 1366px;
+	}
+}
+
+
+
+/************* 
+	Footer
+**************/
+footer{
+
+	margin: 20px;
+	text-align: center;
+}
+/* When the screen is > 992px, stack the elements */
+@media (min-width: 992px){
+	.footer-left{
+		padding-top:20px;
+		text-align: left;
+	}
+	.footer-center{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footer-right{
+		padding-top:20px;
+		text-align: right;
+	}
+}
+
+
+
+/******************** 
+	Sign-in Modal
+*********************/
+.modal-content {
+	background-color: #222222;
+	border-radius: 0;
+	color: #fff;
+	border: 0;
+}
+input {
+	color: black;
+}
+/* When the screen is >768px */
+@media (min-width: 768px){
+	.modal-dialog {
+		width: 500px;
+	}
+}
+/* Modal hr */
+.hr-white{
+	border-color: #fff;
+}
+.modal-title{
+	font-size: 16px;
+}
+/* "Required" asterisks */
+#email-star, 
+#password1-star,
+#password2-star,
+#terms-star{
+	color: red;
+	display: none;
+	font-size: 10px;
+}
+.modal-open .modal,.btn:focus{outline:none;}
+
+
+/**********************
+	Shared styling
+***********************/
+h1{
+	color: #ffd251;
+	margin: 0;
+	text-shadow: 1px 1px 3px #000;
+}
+hr{
+	border-color: #222;
+}
+/* Taller, but lighter feeling hr element. */
+.hrsmall {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 50%;
+}
+/* Used for videos page */
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: 0;
+}
+h1, h2, h3{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+
+
+
